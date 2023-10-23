@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <script>
+        function Enviar() {
+
+        var nome = document.getElementById("nomeid");
+
+        if (nome.value != "") {
+            alert('Obrigado '  + nome.value +  ' por entrar em contato');
+        }
+    }
+
+
+    </script>
+    <style>
+        ul{
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    background-color: black;
+    bottom: 0;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+li a:hover{
+    background-color: #dbd1d1;
+}
+  
+.active {
+    background-color: #dbd1d1;
+}
+body{
+    background-color: #dbd1d1;
+}
+
+img{
+    width: 40%;
+    display: block;
+    float: right;
+    margin-right: 3%;
+    margin-top: auto;
+}
+
+p{
+    margin-left: 7%;
+    margin-top: 7%;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+
+body{
+    background-color: #dbd1d1;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    background-color:#dbd1d1;
+    max-width: 400px;
+}
+
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+
+.enviar {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+    margin-bottom: 0px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+    </style>
+    <nav>
+        <ul>
+            <li><a href="teste.html">Inicio</a></li>
+            <li ><a  href="index.html">Sobre Mim</a></li>
+            <li ><a href="Formacao.html">Formação</a></li>
+            <li ><a href="Portifolio.html">Portifolio</a></li>
+            <li class="active"><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <aside>
+        <img src="contato.jpg">
+    </aside>
+
+    <nav>
+        <p>
+            Entre em contato comigo pelas <strong>REDES</strong>
+        </p>
+    </nav>
+
+    <form >
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nomeid" placeholder="nome" required="required" name="nome" />
+        
+        <br><label for="email">Email</label>
+        <input type="email" id="emailid" placeholder="@mail.com" name="email" />
+
+        <textarea placeholder="Digite aqui"></textarea>
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        
+     
+    </form>
+
+
+</body>
+</html>
